@@ -9,7 +9,7 @@ body {
         border: 5px solid blue;
         height: 100%;
         display: grid;
-        grid-template-rows: 21rem 14.4rem 24rem 28rem 23.5rem 15rem 20.5rem 3fr 1fr 2fr;
+        grid-template-rows: 21rem 14.4rem 24rem 28.2rem 23.5rem 15rem 20.8rem 6.5rem 1fr 2fr;
 
         .parners-display {
             background-image: url(../images/background.png);
@@ -32,7 +32,7 @@ body {
 
 
                     }
-lzzzzzzzzz
+
                     .logo {
                         margin-right: 50px;
                     }
@@ -230,12 +230,14 @@ lzzzzzzzzz
 
         .webstore-display {
             @include mixins.reset;
+
             display: grid;
-            margin-left: 4.5rem;
             grid-template-rows: 0.6fr 1fr;
 
             .title {
                 margin-top: 3.9rem;
+                margin-left: 4.5rem;
+
                 width: 20rem;
 
                 .sml {
@@ -251,7 +253,9 @@ lzzzzzzzzz
             .items {
                 @include mixins.reset;
                 display: grid;
-                grid-template-columns: 1fr 2fr 1fr;
+                margin-left: 4.5rem;
+
+                grid-template-columns: 1fr 1.5fr 1fr;
                 grid-template-rows: 1fr 1fr;
 
                 img {
@@ -262,6 +266,8 @@ lzzzzzzzzz
 
 
                 .item1 {
+                    @include mixins.reset;
+
 
                     grid-column: 1;
                     /* Primera columna */
@@ -395,14 +401,12 @@ lzzzzzzzzz
 
             }
 
-            .img {
+            .img-container {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                margin-right: 8rem;
 
                 img {
-
                     height: 3.5rem;
                 }
             }
@@ -428,7 +432,7 @@ lzzzzzzzzz
                 margin-left: 2rem;
                 width: 15rem;
 
-                
+
                 .smls {
                     @include mixins.reset;
                     @include mixins.smallestText(#F2F0D9);
@@ -439,30 +443,56 @@ lzzzzzzzzz
                     @include mixins.mediumText(#F2F0D9);
                 }
 
-                .btn{
+                .btn {
                     margin-top: 1rem;
-                    img{ 
+
+                    img {
                         width: 6rem;
                         height: 1.8rem;
-                        
+
                     }
                 }
-                img{
+
+                img {
                     margin-top: 0.2rem;
                     height: 1.75rem;
                 }
             }
         }
-        .wish-display{
+
+        .wish-display {
+            @include mixins.reset;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-top: 2rem;
-            
-            .mdd{
-                @include mixins.mediumText(rgb(41, 43, 151));
-                
+            flex-direction: column;
+
+            margin-top: 0.3rem;
+
+            .text-container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .big {
+                    @include mixins.bigText(rgb(41, 43, 151));
+
+                }
+
+                img {
+                    height: 1.5rem;
+                }
             }
+
+            .sml {
+                @include mixins.reset;
+                @include mixins.smallestText(balck);
+            }
+
+
+
+
+
         }
 
     }
