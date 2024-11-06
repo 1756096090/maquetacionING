@@ -1,0 +1,441 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+body .container {
+  width: 44.8rem;
+  border: 5px solid blue;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 21rem 14.4rem 24rem 28rem 23.5rem 15rem 20.5rem 3fr 1fr 2fr;
+}
+body .container .parners-display {
+  background-image: url(../images/background.png);
+  background-size: cover;
+  display: grid;
+  grid-template-rows: 1fr 5fr;
+}
+body .container .parners-display .padding-parner {
+  margin: 0 0 0 2rem;
+}
+body .container .parners-display .padding-parner .sidebar {
+  display: flex;
+  padding: 1rem 4rem 0.6rem 0.2rem;
+  border: 1px solid white;
+  align-items: center;
+  justify-content: center;
+}
+body .container .parners-display .padding-parner .sidebar img {
+  height: 1.8rem;
+}
+body .container .parners-display .padding-parner .sidebar lzzzzzzzzz .logo {
+  margin-right: 50px;
+}
+body .container .parners-display .padding-parner .sidebar p {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  font-size: 9px;
+  padding: 0;
+  margin-right: 10px;
+}
+body .container .parners-display .padding-parner .sidebar .icon {
+  height: 30px;
+  margin-left: 1rem;
+}
+body .container .parners-display .padding-parner .parner-body {
+  display: grid;
+  grid-template-columns: 3.4fr 5fr;
+  margin-left: 2.9rem;
+  margin-top: 4.2rem;
+}
+body .container .parners-display .padding-parner .parner-body .text-btn * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body .container .parners-display .padding-parner .parner-body .text-btn .exp {
+  color: white;
+  font-size: 13px;
+}
+body .container .parners-display .padding-parner .parner-body .text-btn .dwm {
+  color: white;
+  font-size: 31px;
+}
+body .container .parners-display .padding-parner .parner-body .text-btn .spd {
+  color: white;
+  font-size: 13px;
+}
+body .container .parners-display .padding-parner .parner-body .text-btn button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #FF6600;
+  font-size: 9px;
+  padding: 0.5rem;
+  border-radius: 0.4rem;
+  border: #FF6600;
+  margin-top: 0.7rem;
+}
+body .container .parners-display .padding-parner .parner-body .img img {
+  height: 15rem;
+  margin: -1.7rem 0 0 1.2rem;
+}
+body .container .agency-display {
+  display: grid;
+  grid-template-columns: 3fr 5fr;
+  margin-left: 5rem;
+}
+body .container .agency-display * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body .container .agency-display .title {
+  margin-top: 4.5rem;
+}
+body .container .agency-display .title .sml {
+  font-size: 12px;
+  color: rgb(95, 59, 142);
+}
+body .container .agency-display .title .mdd {
+  font-size: 26px;
+  color: rgb(95, 59, 142);
+}
+body .container .agency-display .paragraph {
+  margin-top: 3.5rem;
+  margin-right: 8rem;
+  font-size: 10px;
+  color: black;
+}
+body .container .agency-display .paragraph .gn {
+  margin-bottom: 0.8rem;
+}
+body .container .agency-display .paragraph .pm {
+  font-size: 10px;
+  color: rgb(95, 59, 142);
+}
+body .container .solution-display {
+  background-image: url(../images/background3.png);
+}
+body .container .solution-display .grid-2 {
+  display: grid;
+  height: 100%;
+  grid-template-rows: 1fr 1fr;
+  margin-left: 4.5rem;
+}
+body .container .solution-display .grid-2 .title {
+  margin-top: 4.2rem;
+  width: 20rem;
+}
+body .container .solution-display .grid-2 .title * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body .container .solution-display .grid-2 .title .sml {
+  font-size: 10px;
+  color: #F2F0D9;
+}
+body .container .solution-display .grid-2 .title .mdd {
+  font-size: 26px;
+  color: #F2F0D9;
+}
+body .container .solution-display .grid-2 .img-text {
+  display: grid;
+  grid-template-columns: 1.65fr 2fr;
+  width: 100%;
+}
+body .container .solution-display .grid-2 .img-text * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body .container .solution-display .grid-2 .img-text .img {
+  height: 14.5rem;
+  margin-right: 2rem;
+}
+body .container .solution-display .grid-2 .img-text .img img {
+  width: 100%;
+  height: 100%;
+  justify-self: start;
+  -o-object-position: center;
+     object-position: center;
+}
+body .container .solution-display .grid-2 .img-text .img img * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body .container .solution-display .grid-2 .img-text .items {
+  display: flex;
+  flex-wrap: wrap;
+}
+body .container .solution-display .grid-2 .img-text .items .item {
+  display: flex;
+  margin-right: 1rem;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+body .container .solution-display .grid-2 .img-text .items .item img {
+  height: 3.5rem;
+  margin-right: 1.5rem;
+}
+body .container .solution-display .grid-2 .img-text .items .item p {
+  color: #F2F0D9;
+  font-size: 11px;
+  text-align: center;
+  width: 2rem;
+  margin-left: -1.5rem;
+}
+body .container .solution-display .grid-2 .img-text .items .item p * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body .container .webstore-display {
+  display: grid;
+  margin-left: 4.5rem;
+  grid-template-rows: 0.6fr 1fr;
+}
+body .container .webstore-display * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body .container .webstore-display .title {
+  margin-top: 3.9rem;
+  width: 20rem;
+}
+body .container .webstore-display .title .sml {
+  font-size: 10px;
+  color: rgb(41, 43, 151);
+}
+body .container .webstore-display .title .mdd {
+  font-size: 26px;
+  color: rgb(41, 43, 151);
+}
+body .container .webstore-display .items {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+body .container .webstore-display .items * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body .container .webstore-display .items img {
+  height: 7rem;
+}
+body .container .webstore-display .items img * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body .container .webstore-display .items .item1 {
+  grid-column: 1;
+  /* Primera columna */
+  grid-row: 1;
+  /* Primera fila */
+}
+body .container .webstore-display .items .item2 {
+  grid-column: 1;
+  /* Primera columna */
+  grid-row: 2;
+}
+body .container .webstore-display .items .item3 {
+  grid-column: 2;
+  /* Segunda columna (centro) */
+  grid-row: 1/span 2;
+  /* Ocupa ambas filas */
+}
+body .container .webstore-display .items .item3 img {
+  height: 16rem;
+}
+body .container .webstore-display .items .item4 {
+  grid-column: 3;
+  /* Tercera columna */
+  grid-row: 1;
+  /* Primera fila */
+}
+body .container .webstore-display .items .item5 {
+  grid-column: 3;
+  /* Tercera columna */
+  grid-row: 2;
+  /* Segunda fila */
+}
+body .container .experience-display {
+  background-image: url(../images/background5.png);
+  padding-left: 4.5rem;
+  display: grid;
+  grid-template-rows: 1.4fr 2fr;
+}
+body .container .experience-display .title {
+  margin-top: 4.6rem;
+  width: 20rem;
+}
+body .container .experience-display .title * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body .container .experience-display .title .sml {
+  font-size: 12px;
+  color: #F3F1D8;
+}
+body .container .experience-display .title .mdd {
+  font-size: 26px;
+  color: #F3F1D8;
+}
+body .container .experience-display .items {
+  display: flex;
+  margin: 1rem 1rem 1rem 3rem;
+}
+body .container .experience-display .items .item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 8rem;
+  margin: 0rem 0.7rem 0 0rem;
+}
+body .container .experience-display .items .item * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body .container .experience-display .items .item * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body .container .experience-display .items .item img {
+  height: 3.8rem;
+}
+body .container .experience-display .items .item .mdd {
+  font-size: 26px;
+  color: #F3F1D1;
+}
+body .container .experience-display .items .item .sml {
+  font-size: 10px;
+  color: #F3F1D1;
+  width: 90px;
+  text-align: center;
+}
+body .container .client-display {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  margin-left: 4.5rem;
+}
+body .container .client-display * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body .container .client-display .title {
+  margin-top: 3.5rem;
+  width: 20rem;
+}
+body .container .client-display .title * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body .container .client-display .title .sml {
+  font-size: 12px;
+  color: rgb(41, 43, 141);
+  margin-bottom: 0.7rem;
+  width: 28rem;
+}
+body .container .client-display .title .smls {
+  font-size: 10px;
+  color: rgb(41, 43, 141);
+  width: 20rem;
+  margin-bottom: 0.7rem;
+}
+body .container .client-display .title .mdd {
+  font-size: 26px;
+  color: rgb(41, 43, 151);
+}
+body .container .client-display .title .mdd * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body .container .client-display .img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 8rem;
+}
+body .container .client-display .img img {
+  height: 3.5rem;
+}
+body .container .contact-display {
+  background-image: url(../images/background7.png);
+  background-size: cover;
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+}
+body .container .contact-display * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body .container .contact-display img {
+  margin-top: 2rem;
+  height: 18.3rem;
+  margin-left: 7rem;
+}
+body .container .contact-display .title {
+  margin-top: 4.9rem;
+  margin-left: 2rem;
+  width: 15rem;
+}
+body .container .contact-display .title * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body .container .contact-display .title .smls {
+  font-size: 10px;
+  color: #F2F0D9;
+}
+body .container .contact-display .title .smls * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body .container .contact-display .title .mdd {
+  font-size: 26px;
+  color: #F2F0D9;
+}
+body .container .contact-display .title .mdd * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body .container .contact-display .title .btn {
+  margin-top: 1rem;
+}
+body .container .contact-display .title .btn img {
+  width: 6rem;
+  height: 1.8rem;
+}
+body .container .contact-display .title img {
+  margin-top: 0.2rem;
+  height: 1.75rem;
+}
+body .container .wish-display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+body .container .wish-display .mdd {
+  font-size: 26px;
+  color: rgb(41, 43, 151);
+}/*# sourceMappingURL=main.css.map */

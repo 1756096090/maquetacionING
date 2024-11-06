@@ -1,0 +1,471 @@
+@use 'mixins';
+
+body {
+    display: flex;
+    justify-content: center;
+
+    .container {
+        width: 44.8rem;
+        border: 5px solid blue;
+        height: 100%;
+        display: grid;
+        grid-template-rows: 21rem 14.4rem 24rem 28rem 23.5rem 15rem 20.5rem 3fr 1fr 2fr;
+
+        .parners-display {
+            background-image: url(../images/background.png);
+            background-size: cover;
+            display: grid;
+            grid-template-rows: 1fr 5fr;
+
+            .padding-parner {
+                margin: 0 0 0 2rem;
+
+                .sidebar {
+                    display: flex;
+                    padding: 1rem 4rem 0.6rem 0.2rem;
+                    border: 1px solid white;
+                    align-items: center;
+                    justify-content: center;
+
+                    img {
+                        height: 1.8rem;
+
+
+                    }
+lzzzzzzzzz
+                    .logo {
+                        margin-right: 50px;
+                    }
+
+                    p {
+                        display: flex;
+                        justify-content: space-between;
+                        color: white;
+                        font-size: 9px;
+                        padding: 0;
+                        margin-right: 10px;
+
+
+                    }
+
+                    .icon {
+                        height: 30px;
+                        margin-left: 1rem;
+                    }
+
+
+                }
+
+                .parner-body {
+                    display: grid;
+                    grid-template-columns: 3.4fr 5fr;
+                    margin-left: 2.9rem;
+                    margin-top: 4.2rem;
+
+                    .text-btn {
+                        @include mixins.reset;
+
+                        .exp {
+                            color: white;
+                            font-size: 13px;
+
+                        }
+
+                        .dwm {
+                            color: white;
+                            font-size: 31px;
+                        }
+
+                        .spd {
+                            color: white;
+                            font-size: 13px;
+                        }
+
+                        button {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            color: white;
+                            background-color: #FF6600;
+                            font-size: 9px;
+                            padding: 0.5rem;
+                            border-radius: 0.4rem;
+                            border: #FF6600;
+                            margin-top: 0.7rem;
+                        }
+                    }
+
+                    .img {
+                        img {
+                            height: 15rem;
+                            margin: -1.7rem 0 0 1.2rem;
+                        }
+                    }
+
+                }
+            }
+
+
+
+
+        }
+
+        .agency-display {
+            @include mixins.reset;
+            display: grid;
+            grid-template-columns: 3fr 5fr;
+            margin-left: 5rem;
+
+            .title {
+                margin-top: 4.5rem;
+
+                .sml {
+
+                    @include mixins.smallText;
+                }
+
+                .mdd {
+                    @include mixins.mediumText;
+                }
+            }
+
+            .paragraph {
+                margin-top: 3.5rem;
+                margin-right: 8rem;
+                @include mixins.smallestText(black);
+
+                .gn {
+                    margin-bottom: 0.8rem;
+                }
+
+                .pm {
+                    @include mixins.smallestText;
+                }
+
+
+            }
+
+
+        }
+
+        .solution-display {
+            background-image: url(../images/background3.png);
+
+            .grid-2 {
+                display: grid;
+                height: 100%;
+                grid-template-rows: 1fr 1fr;
+                margin-left: 4.5rem;
+
+                .title {
+                    @include mixins.reset;
+                    margin-top: 4.2rem;
+                    width: 20rem;
+
+                    .sml {
+                        @include mixins.smallestText(#F2F0D9);
+                    }
+
+                    .mdd {
+                        @include mixins.mediumText(#F2F0D9);
+                    }
+                }
+
+                .img-text {
+                    @include mixins.reset;
+
+                    display: grid;
+                    grid-template-columns: 1.65fr 2fr;
+                    width: 100%;
+
+                    .img {
+                        height: 14.5rem;
+                        margin-right: 2rem;
+
+                        img {
+                            @include mixins.reset;
+                            width: 100%;
+                            height: 100%;
+                            justify-self: start;
+                            object-position: center;
+                        }
+                    }
+
+                    .items {
+                        display: flex;
+                        flex-wrap: wrap;
+
+                        .item {
+                            display: flex;
+                            margin-right: 1rem;
+                            align-items: center;
+                            justify-content: center;
+                            flex-direction: column;
+
+                            img {
+                                height: 3.5rem;
+                                margin-right: 1.5rem;
+                            }
+
+                            p {
+                                @include mixins.reset;
+                                color: #F2F0D9;
+                                font-size: 11px;
+                                text-align: center;
+                                width: 2rem;
+                                margin-left: -1.5rem;
+                            }
+                        }
+                    }
+
+
+
+                }
+
+
+            }
+
+
+        }
+
+        .webstore-display {
+            @include mixins.reset;
+            display: grid;
+            margin-left: 4.5rem;
+            grid-template-rows: 0.6fr 1fr;
+
+            .title {
+                margin-top: 3.9rem;
+                width: 20rem;
+
+                .sml {
+                    @include mixins.smallestText(rgb(41, 43, 151));
+                }
+
+                .mdd {
+                    @include mixins.mediumText(rgb(41, 43, 151));
+                }
+
+            }
+
+            .items {
+                @include mixins.reset;
+                display: grid;
+                grid-template-columns: 1fr 2fr 1fr;
+                grid-template-rows: 1fr 1fr;
+
+                img {
+                    @include mixins.reset;
+                    height: 7rem;
+
+                }
+
+
+                .item1 {
+
+                    grid-column: 1;
+                    /* Primera columna */
+                    grid-row: 1;
+                    /* Primera fila */
+                }
+
+                .item2 {
+                    grid-column: 1;
+                    /* Primera columna */
+                    grid-row: 2;
+                }
+
+                .item3 {
+                    grid-column: 2;
+                    /* Segunda columna (centro) */
+                    grid-row: 1 / span 2;
+
+                    /* Ocupa ambas filas */
+                    img {
+                        height: 16rem;
+                    }
+                }
+
+                .item4 {
+                    grid-column: 3;
+                    /* Tercera columna */
+                    grid-row: 1;
+                    /* Primera fila */
+                }
+
+                .item5 {
+                    grid-column: 3;
+                    /* Tercera columna */
+                    grid-row: 2;
+                    /* Segunda fila */
+                }
+            }
+
+
+
+        }
+
+        .experience-display {
+            background-image: url(../images/background5.png);
+            padding-left: 4.5rem;
+            display: grid;
+            grid-template-rows: 1.4fr 2fr;
+
+            .title {
+                @include mixins.reset;
+                margin-top: 4.6rem;
+                width: 20rem;
+
+                .sml {
+                    @include mixins.smallText(#F3F1D8);
+                }
+
+                .mdd {
+                    @include mixins.mediumText(#F3F1D8);
+                }
+            }
+
+            .items {
+                display: flex;
+                margin: 1rem 1rem 1rem 3rem;
+
+                .item {
+                    @include mixins.reset;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    flex-direction: column;
+                    height: 8rem;
+                    margin: 0rem 0.7rem 0 0rem;
+
+
+                    @include mixins.reset;
+
+                    img {
+                        height: 3.8rem;
+                        ;
+                    }
+
+                    .mdd {
+                        @include mixins.mediumText(#F3F1D1);
+                    }
+
+                    .sml {
+                        @include mixins.smallestText(#F3F1D1);
+                        width: 90px;
+                        text-align: center;
+                    }
+
+                }
+            }
+
+        }
+
+        .client-display {
+            @include mixins.reset;
+            display: grid;
+            grid-template-columns: 0.5fr 1fr;
+            margin-left: 4.5rem;
+
+            .title {
+                @include mixins.reset;
+                margin-top: 3.5rem;
+                width: 20rem;
+
+                .sml {
+                    @include mixins.smallText(rgb(41, 43, 141));
+                    margin-bottom: 0.7rem;
+                    width: 28rem;
+
+                }
+
+                .smls {
+                    @include mixins.smallestText(rgb(41, 43, 141));
+                    width: 20rem;
+                    margin-bottom: 0.7rem;
+
+
+                }
+
+                .mdd {
+                    @include mixins.reset;
+                    @include mixins.mediumText(rgb(41, 43, 151));
+                }
+
+
+            }
+
+            .img {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-right: 8rem;
+
+                img {
+
+                    height: 3.5rem;
+                }
+            }
+        }
+
+        .contact-display {
+            @include mixins.reset;
+            background-image: url(../images/background7.png);
+            background-size: cover;
+
+            display: grid;
+            grid-template-columns: 0.5fr 1fr;
+
+            img {
+                margin-top: 2rem;
+                height: 18.3rem;
+                margin-left: 7rem;
+            }
+
+            .title {
+                @include mixins.reset;
+                margin-top: 4.9rem;
+                margin-left: 2rem;
+                width: 15rem;
+
+                
+                .smls {
+                    @include mixins.reset;
+                    @include mixins.smallestText(#F2F0D9);
+                }
+
+                .mdd {
+                    @include mixins.reset;
+                    @include mixins.mediumText(#F2F0D9);
+                }
+
+                .btn{
+                    margin-top: 1rem;
+                    img{ 
+                        width: 6rem;
+                        height: 1.8rem;
+                        
+                    }
+                }
+                img{
+                    margin-top: 0.2rem;
+                    height: 1.75rem;
+                }
+            }
+        }
+        .wish-display{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 2rem;
+            
+            .mdd{
+                @include mixins.mediumText(rgb(41, 43, 151));
+                
+            }
+        }
+
+    }
+
+
+}
