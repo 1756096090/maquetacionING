@@ -4,10 +4,9 @@ body {
 }
 body .container {
   width: 44.8rem;
-  border: 5px solid blue;
   height: 100%;
   display: grid;
-  grid-template-rows: 21rem 14.4rem 24rem 28.2rem 23.5rem 15rem 20.8rem 6.5rem 1fr 2fr;
+  grid-template-rows: 21rem 14.4rem 24rem 28.2rem 23.5rem 15rem 20.8rem 6.5rem 12rem 3rem;
 }
 body .container .parners-display {
   background-image: url(../images/background.png);
@@ -463,6 +462,64 @@ body .container .wish-display .sml {
   color: balck;
 }
 body .container .wish-display .sml * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body .container .services-display {
+  background-color: rgb(75, 0, 136);
+}
+body .container .services-display .container-text {
+  display: grid;
+  grid-template-columns: 0.3fr 1fr 1fr 1fr;
+  gap: 1rem;
+}
+body .container .services-display .container-text p {
+  font-size: 10px;
+  color: black;
+  color: white;
+  max-height: 5rem;
+}
+body .container .services-display .container-text p * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body .container .services-display .container-text h3 {
+  color: #F2F0D9;
+  font-size: 12px;
+  color: #F2F0D9;
+}
+body .container .services-display .container-text h3 * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body .container .logos-display {
+  background-color: hsl(255, 57%, 31%);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.5;
+}
+body .container .logos-display * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body .container .logos-display img {
+  margin: 1rem 2rem 0 2rem;
+  height: 1.5rem;
+}
+body .container .logos-display img * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body .container .logos-display .img01 {
+  margin-left: 5rem;
+  height: 1.5rem;
+}
+body .container .logos-display .img01 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
